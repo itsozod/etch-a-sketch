@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/pencil1.png" type="image/x-icon">
+    <title>Etch-a-Sketch</title>
+    <!-- Font awesome kit -->
+    <script src="https://kit.fontawesome.com/d1ffe73f18.js" crossorigin="anonymous"></script>
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="title">Etch-a-Sketch</header>
+    <main id="main">
+        <div class="colors">
+            <button class="universal">Pick: <input id="colorPicker" type="color" value="#177777"></button>
+        </div>
+        <div class="button-container">
+            <button id="blackBtn">Black</button>
+            <button id="randomBtn">Random</button>
+            <button id="eraserBtn">Eraser</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+        <div class="grid-container"></div>
+        <div class="updateSize">16 x 16</div>
+        <input class="sizeShow" type="range" value="16" min="1" max="64">
+        <p class="info">Smallest to largest value...</p>
+    </main>
+    <footer class="footer">
+        <p>Copyright © <span id="current-year"></span> itsozod</p>
+        <a href="https://github.com/itsozod" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
